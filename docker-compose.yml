@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  qa-agent:
+    build: .
+    environment:
+      - JIRA_URL=${JIRA_URL}
+      - JIRA_USER=${JIRA_USER}
+      - JIRA_TOKEN=${JIRA_TOKEN}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./logs:/app/logs
+    restart: always

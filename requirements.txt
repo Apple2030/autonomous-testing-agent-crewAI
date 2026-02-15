@@ -1,0 +1,6 @@
+crewai
+openai
+jira
+PyGithub
+playwright
+python-dotenv
